@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Results</h1>
+        <p><strong>Financial Index:</strong> {{ results['financial_index'] }}</p>
+        <p><strong>Total Revenue:</strong> {{ results['revenue'] }}</p>
+        <p><strong>ISCR Flag:</strong> {{ results['iscr_flag'] }}</p>
+        <p><strong>Total Revenue Flag:</strong> {{ results['revenue_flag'] }}</p>
+        <p><strong>Borrowing to Revenue Flag:</strong> {{ results['borrowing_flag'] }}</p>
+        <a href="/">Upload Another File</a>
+    </div>
+</body>
+</html>
